@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style type="text/css">
+           
+    .login{
+        border: 1px solid rgb(202, 203, 214);
+        color: black;
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        font-size: 20px;
+        top: 15%;
+        right: 600px; 
+        line-height: 50px;
+        border-radius: 4px;
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+    }
+    input{
+            width: 300px;
+            min-width: 100px;
+            border: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: whitesmoke;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+    }
+    input:focus{
+            outline: none;
+            color: black;
+            background-color: rgba(136, 140, 143, 0.35);
+    }
+    button{
+        margin: 20px;
+        width:80px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(167, 67, 185);
+        color: white;
+    }
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    
+        </style>
+    </head>
+
+    <body>
+        <section id="block">
+        <video autoplay muted loop id="myVideo">
+            <source src = "C:\Users\Lenovo\Desktop\Frontend_Content\video\Background.mp4" type="video/mp4">
+            
+
+        </video>
+       
+        
+            <div class="login">
+                <form name="loginform" id="loginform" action="" method="get">
+                <centre><h2>Create Gmail Account</h2></centre>
+                <input type="text" title="f_name" placeholder="Full Name" required><br>
+                <input type="number" title="C_number" min="0000000" max="9999999" placeholder="Contact Number" required><br>
+                <input type="email" title="email" placeholder="Enter Email Id" required><br>
+                <button form="loginform">Reset</button>
+                <button form="loginform">Submit</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
